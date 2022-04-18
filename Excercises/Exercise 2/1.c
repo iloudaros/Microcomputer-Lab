@@ -41,10 +41,6 @@ int main(){
 	while(1){
 		if (end==4) break;
 
-		while (forward)
-		{
-
-		}
 		while (turn_left)
 		{
 			//Set the timer
@@ -63,7 +59,7 @@ int main(){
 		}
 
 	}
-
+return 0;
 }
 
 ISR(ADC0_WCOMP_vect){
@@ -84,7 +80,7 @@ ISR(TCA0_CMP0_vect)
 	//clear flag
 	int intflags = TCA0.SINGLE.INTFLAGS;
 	TCA0.SINGLE.INTFLAGS=intflags;
-    
+
 	turn_left=0;
 	forward=1;
 
