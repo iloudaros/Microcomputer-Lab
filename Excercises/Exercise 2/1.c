@@ -84,6 +84,7 @@ ISR(TCA0_CMP0_vect)
 	//clear flag
 	int intflags = TCA0.SINGLE.INTFLAGS;
 	TCA0.SINGLE.INTFLAGS=intflags;
+    
 	turn_left=0;
 	forward=1;
 
