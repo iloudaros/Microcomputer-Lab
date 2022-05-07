@@ -20,14 +20,14 @@ int main(){
 
 ISR(TCA0_OVF_vect){
 	//clear the interrupt flag
-	int intflags = TCA0_SINGLE.INTFLAGS;
+	int intflags = TCA0.SINGLE.INTFLAGS;
 	TCA0.SINGLE.INTFLAGS = intflags;
 	PORTD.OUT |= PIN1_bm; //PIN is off
 }
 
 ISR(TCA0_CMP0_vect){
 	//clear the interrupt flag
-	int intflags = TCA0_SINGLE.INTFLAGS;
+	int intflags = TCA0.SINGLE.INTFLAGS;
 	TCA0.SINGLE.INTFLAGS = intflags;
 	PORTD.OUTCLR |= PIN1_bm; //PIN is off
 }
