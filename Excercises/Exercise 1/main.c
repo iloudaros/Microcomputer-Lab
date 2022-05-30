@@ -40,7 +40,7 @@ int main(){
 
 		if (button==0) // If there are no pedestrians
 		{
-			if (cars==0 | cars==5 | cars==8) //If there are cars on the small road
+			if (cars==0 || cars==5 || cars==8) //If there are cars on the small road
 			{
 				PORTD.OUT |= (PIN0_bm|PIN2_bm); //roads off
 				PORTD.OUTCLR= PIN2_bm; //csr on
@@ -82,5 +82,5 @@ ISR(TCA0_CMP0_vect)
 	int intflags = TCA0.SINGLE.INTFLAGS;
 	TCA0.SINGLE.INTFLAGS=intflags;
 	button=0;
-	PORTD.OUT |= PIN0_bm //pbr off
+	PORTD.OUT |= PIN0_bm; //pbr off
 }
