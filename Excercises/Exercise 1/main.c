@@ -1,9 +1,9 @@
 /*
- * Ergastirio_1.c
- *
- * Created: 4/12/2022 11:56:17 AM
- * Author : Ioannis Loudaros and Christina Kratimenou
- */
+* Ergastirio_1.c
+*
+* Created: 4/12/2022 11:56:17 AM
+* Author : Ioannis Loudaros and Christina Kratimenou
+*/
 
 
 #include <avr/io.h>
@@ -54,7 +54,7 @@ int main(){
 
 		else
 		{
-		TCA0.SINGLE.CTRLA |=1; //Start the timer
+			TCA0.SINGLE.CTRLA |=1; //Start the timer
 		}
 
 	}

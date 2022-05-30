@@ -178,9 +178,9 @@ ISR(PORTF_PORT_vect)// Button Pressed
 	if(PORTF.INTFLAGS == 0x20) current_digit=5;
 	// SW6 is enabled
 	else current_digit=6;
-		
+
 	// clear the interrupt flag
-  	int intflags = PORTF.INTFLAGS;
+	int intflags = PORTF.INTFLAGS;
 	PORTF.INTFLAGS = intflags;
 
 	if (current_digit==password[checking_digit]) checking_digit++;

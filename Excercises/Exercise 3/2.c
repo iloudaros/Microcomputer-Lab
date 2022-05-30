@@ -13,5 +13,5 @@ int main() {
 	sei();
 
 	while(wall==0) {
-  }
+	}
 }

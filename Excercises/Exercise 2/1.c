@@ -1,9 +1,9 @@
 /*
- * Ergastirio 2.c
- *
- * Created: 4/16/2022 12:32:02 AM
- * Author : Ioannis Loudaros and Christina Kratimenou
- */
+* Ergastirio 2.c
+*
+* Created: 4/16/2022 12:32:02 AM
+* Author : Ioannis Loudaros and Christina Kratimenou
+*/
 
 #include <avr/io.h>
 #include <util/delay.h>
@@ -59,11 +59,11 @@ int main(){
 		}
 
 	}
-return 0;
+	return 0;
 }
 
 ISR(ADC0_WCOMP_vect){
-//clear the flags of the ADC
+	//clear the flags of the ADC
 	int intflags = ADC0.INTFLAGS;
 	ADC0.INTFLAGS = intflags;
 

@@ -12,5 +12,5 @@ int main() {
 	sei();
 
 	while(1) {
-  }
+	}
 }
