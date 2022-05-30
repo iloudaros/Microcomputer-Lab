@@ -15,7 +15,7 @@ int main(void)
 {
 	initialise_led();
 	initialise_switches();
-	initilise_ADC();
+	initialise_ADC();
 	free_running();
 	start_ADC();
 	set_TCA();
