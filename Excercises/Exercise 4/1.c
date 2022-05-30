@@ -1,9 +1,9 @@
 /*
- *
- *
- * Created: 5/16/2022 7:20:32 PM
- * Author : Ioannis Loudaros - Christina Kratimenou
- */
+*
+*
+* Created: 5/16/2022 7:20:32 PM
+* Author : Ioannis Loudaros - Christina Kratimenou
+*/
 
 #include "iheader.h"
 
@@ -17,12 +17,12 @@ int main(void)
 	set_TCA();
 	sei();
 
-    while (1)
-    {
+	while (1)
+	{
 		if(access_granted==1)
 
 		{
-			 start_TCA();
+			start_TCA();
 		}
-    }
+	}
 }
